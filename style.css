@@ -1,16 +1,66 @@
-body {
-    background-color: #183460;
-}
+    @charset "UTF-8";
+    /*------------------------
+[TABLE OF CONTENTS]
+    
 
-.header {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    width: 80%;
-    height: 10%;
-}
-
-.header_logo {
-    width: 10px;
-    height: 20px;
-}
+1. HEADER
+2. BANNER
+3. ADVERTISING
+4. PRESENTATION
+5. GALLERY
+6. PRICING
+7. CALL TO ACTION
+8. FOOTER
+------------------------*/
+    
+    body {
+        font-family: 'Quicksand', sans-serif;
+        background-color: #183460;
+    }
+    /* 1. HEADER */
+    
+    .header {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        width: 80%;
+        height: 10%;
+        margin-top: 2%;
+        margin-left: 10%;
+    }
+    
+    .header_logo {
+        width: 10px;
+        height: 20px;
+    }
+    
+    .listnav {
+        width: 80%;
+        margin-top: 20px;
+        align-content: space-around;
+    }
+    
+    .listnav a {
+        font-size: 12pt;
+        text-decoration: none;
+        color: white;
+        position: relative;
+        align-content: space-between;
+        padding: 30px 2em;
+    }
+    
+    .listnav a::before {
+        content: "";
+        display: block;
+        width: 0;
+        height: 0.3em;
+        background: #eb5866;
+        position: absolute;
+        top: 0;
+        left: 0;
+        transition: all 0.3s;
+    }
+    
+    .listnav a:hover::before {
+        width: 100%;
+    }
