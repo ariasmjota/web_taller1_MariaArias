@@ -12,6 +12,7 @@
 7. CALL TO ACTION
 8. FOOTER
 ------------------------*/
+    /* GENERAL */
     
     body {
         font-family: 'Quicksand', sans-serif;
@@ -63,4 +64,53 @@
     
     .listnav a:hover::before {
         width: 100%;
+    }
+    /* BANNER */
+    
+    .banner {
+        margin-top: 10%;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        z-index: -1;
+        position: relative;
+    }
+    
+    .banner img {
+        width: 50%;
+        display: block;
+        margin: 0 auto;
+    }
+    
+    .btop {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        width: 80%;
+        height: 30%;
+        margin-top: 2%;
+        margin-left: 10%;
+        z-index: -1;
+    }
+    
+    .banner__top {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        width: 80%;
+        margin-top: 2%;
+        margin-left: 10%;
+        align-items: baseline;
+    }
+    
+    .btop__rigth h1 {
+        font-family: 'Montserrat', sans-serif;
+        font-style: normal;
+        font-weight: 1800;
+        font-size: 700%;
+        color: white;
+    }
+    
+    .btop__center img {
+        transform: rotate(-30deg);
     }
