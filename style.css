@@ -52,7 +52,7 @@ body {
     color: white;
     position: relative;
     align-content: space-between;
-    padding: 30px 2em;
+    padding: 20px 2em;
 }
 
 .listnav a::before {
@@ -90,43 +90,83 @@ body {
 /* Top banner */
 
 .banner__top {
+    width: 100%;
+    margin: auto;
     display: flex;
     flex-direction: row;
-    justify-content: space-between;
-    width: 80%;
+    justify-content: center;
     align-items: center;
 }
 
 
 /* Block top */
 
+
+/* Rigth seccion */
+
+.btop__rigth {
+    width: 25%;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
 .btop__rigth h1 {
     font-family: 'Montserrat', sans-serif;
-    font-weight: 300pt;
-    font-size: 100pt;
+    font-weight: bolder;
+    font-size: 700%;
     color: white;
     z-index: 1;
+    margin: 5pt;
 }
 
-.btop__center img {
-    position: relative;
-    width: 80%;
-    z-index: 2;
-}
 
-.banner__center {
-    width: 50%;
-    float: none;
-    margin: 0px auto;
+/* Center seccion */
+
+.btop__center {
+    width: 100%;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 .center__back {
-    background-image: url('images/nike_banner.png');
-    margin: 0px auto;
     height: 100%;
-    background-size: contain;
-    display: block;
     margin: 0 auto;
+    background-image: url('images/nike_banner.png');
+    background-size: contain;
+    background-position: center;
+    background-repeat: no-repeat;
+    display: block;
+}
+
+.center__image {
+    width: 90%;
+    transform: rotate(-30deg)
+}
+
+
+/* left seccion */
+
+.btop__left {
+    width: 25%;
+    margin: 0;
+    display: flex;
+    align-items: baseline;
+    justify-content: baseline;
+}
+
+.btop__left h2 {
+    font-family: 'Montserrat';
+    font-size: 36px;
+    font-style: normal;
+    font-weight: bold;
+    color: #43CDEC;
+    text-align: end;
+    display: inline-block;
+    vertical-align: baseline;
 }
 
 
@@ -136,4 +176,5 @@ body {
     font-family: 'Montserrat', sans-serif;
     font-size: 20pt;
     color: #eb5866;
+    margin: 0;
 }
