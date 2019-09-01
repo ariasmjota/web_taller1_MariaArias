@@ -1,0 +1,18 @@
+
+.slider{
+    overflow: hidden;
+}
+
+.slider__tape{
+    display: flex;
+    align-items: flex-start;
+    transition: transform .3s ease-in-out;
+}
+
+.slider__tape--inactive{
+    transition: none;
+}
+
+.slider__img{
+    width: 100%;
+}
