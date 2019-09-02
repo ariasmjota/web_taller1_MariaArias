@@ -40,10 +40,16 @@ body {
     height: 20px;
 }
 
+
+/* Lis nav */
+
 .listnav {
     width: 80%;
     margin-top: 20px;
-    align-content: space-around;
+    align-content: space-between;
+    margin-left: 10%;
+    margin-right: 10%;
+    position: relative;
 }
 
 .listnav a {
@@ -140,11 +146,15 @@ body {
     background-position: center;
     background-repeat: no-repeat;
     display: block;
+    z-index: -2;
+    position: relative;
 }
 
 .center__image {
     width: 90%;
-    transform: rotate(-30deg)
+    transform: rotate(-30deg);
+    z-index: -1;
+    position: relative;
 }
 
 
@@ -153,6 +163,7 @@ body {
 .btop__left {
     width: 25%;
     margin: 0;
+    height: 100%;
     display: flex;
     align-items: baseline;
     justify-content: baseline;
@@ -177,4 +188,103 @@ body {
     font-size: 20pt;
     color: #eb5866;
     margin: 0;
+}
+
+
+/* Advertising */
+
+.advertising {
+    width: 100%;
+    height: 30%;
+    margin: 0%;
+    display: flex;
+    flex-direction: row;
+    align-content: space-between;
+}
+
+.individual {
+    width: 30%;
+    background-color: white;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    position: relative;
+    padding: 0 25px;
+    border-radius: 23px;
+    margin: 5%;
+    transition: transform .3s ease-in-out;
+}
+
+.advertising__individual--inactive {
+    transition: none;
+}
+
+.individual__image {
+    width: 200px;
+    position: absolute;
+    top: 20px;
+    right: 200px;
+    transform: rotate(-25deg);
+}
+
+.left {
+    display: flex;
+    flex-direction: column;
+    align-self: flex-end;
+}
+
+.left__header {
+    font-family: 'Montserrat';
+    font-size: 13pt;
+    color: #eb5866;
+    padding: 2%;
+    margin: 0;
+}
+
+.left__center img {
+    width: 20px;
+    margin: 0;
+}
+
+.left__bottom h2 {
+    margin: 0;
+}
+
+
+/* PRESENTATION */
+
+.presentation {
+    width: 80%;
+    display: flex;
+    flex-direction: column;
+    align-content: center;
+    margin: 0;
+    margin-left: 10%;
+}
+
+.presentation__top {
+    display: flex;
+    align-self: center;
+    margin: 0;
+}
+
+.presentation__top h2 {
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-size: 40pt;
+    color: #FF302A;
+    margin: 0;
+}
+
+.presentation_left {
+    width: 50%;
+}
+
+.pright {
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    margin-left: 10%;
+    margin-right: 10%;
+    align-content: space-between;
 }
