@@ -276,13 +276,20 @@ body {
     margin: 0;
 }
 
-.presentation_left {
+.presentation__bottom {
+    display: flex;
+    flex-direction: row;
+    align-content: space-between;
+}
+
+.presentation__bottom img {
     width: 50%;
+    margin: 0;
 }
 
 .pright {
     display: flex;
-    flex-direction: row;
+    flex-direction: column;
     width: 100%;
     margin-left: 10%;
     margin-right: 10%;
