@@ -330,3 +330,47 @@ color: #FF302A;
     text-align: justify;
     margin: 10pt 0;
 }
+/* GALLERY */
+.gallery{
+    width: 95%;
+    display: flex;
+    flex-direction: row;
+    margin: 0;
+    margin-left: 2.5%;
+    margin-right: 2.5%;
+    align-content: space-between;
+}
+.vertical{
+    overflow: hidden;
+}
+.vertical__slider{
+    display: flex;
+    align-items: flex-start;
+    transition: transform .3s ease-in-out;
+}
+.vertical__img{
+    width: 100%;
+}
+.horizontal{
+    overflow: hidden;
+}
+.horizontal__slider{
+    display: flex;
+    align-items: flex-start;
+    transition: transform .3s ease-in-out;
+}
+.horizontal__img{
+    width: 100%;
+}
+
+.last{
+    overflow: hidden;
+}
+.last__slider{
+    display: flex;
+    align-items: flex-start;
+    transition: transform .3s ease-in-out;
+}
+.last__img{
+    width: 100%;
+}
