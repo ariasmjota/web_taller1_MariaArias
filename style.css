@@ -1,4 +1,4 @@
-@@charset "UTF-8";
+@charset "UTF-8";
 /*------------------------
 [TABLE OF CONTENTS]
     
@@ -308,25 +308,25 @@ body {
     margin: 20pt;
     flex-grow: 0;
     width: 30%;
+        border-radius: 23px; 
 }
 
 .characteristic__img {
-    width: 100px;
+    width: 60px;
     margin: 0;
-    fill: white;
-    color: white;
+ 
 }
 
 .characteristic__container h2 {
-
-    color: #43CDEC;
+color: #FF302A;
+    font-weight: bolder;
     text-align: center;
     display: inline-block;
-    vertical-align: baseline;
+    vertical-align: auto;
     margin: 0;
 }
 .characteristic__container p {
-    color:white;
+    color: #43CDEC;
     text-align: justify;
     margin: 10pt 0;
 }
