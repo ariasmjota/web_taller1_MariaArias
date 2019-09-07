@@ -59,6 +59,7 @@ body {
     position: relative;
     align-content: space-between;
     padding: 20px 2em;
+    cursor: pointer;
 }
 
 .listnav a::before {
@@ -69,13 +70,15 @@ body {
     background: #eb5866;
     position: absolute;
     top: 0;
-    left: 0;
+    left: 50%;
     transition: all 0.3s;
 }
 
 .listnav a:hover::before {
     width: 100%;
+    left: 0%;
 }
+.listnav a::
 
 /* BANNER */
 
@@ -242,7 +245,8 @@ body {
 .left__bottom h2 {
     margin: 0;
 }
-.left__bottom p{
+
+.left__bottom p {
     margin: 4pt 0;
 }
 
@@ -295,7 +299,6 @@ body {
 /* Characteristic */
 
 .characteristic {
-
     margin: 10pt 0;
     width: 90%;
     display: flex;
@@ -304,73 +307,48 @@ body {
     margin-right: 5%;
     align-content: space-between;
 }
-.characteristic__item{
+
+.characteristic__item {
     margin: 20pt;
     flex-grow: 0;
     width: 30%;
-        border-radius: 23px; 
+    border-radius: 23px;
 }
 
 .characteristic__img {
     width: 60px;
     margin: 0;
- 
 }
 
 .characteristic__container h2 {
-color: #FF302A;
+    color: #FF302A;
     font-weight: bolder;
     text-align: center;
     display: inline-block;
     vertical-align: auto;
     margin: 0;
 }
+
 .characteristic__container p {
     color: #43CDEC;
     text-align: justify;
     margin: 10pt 0;
 }
+
 /* GALLERY */
-.gallery{
-    width: 95%;
+
+.gallery {
+    width: 100%;
+    margin: 0;
+    list-style: none;
+    
     display: flex;
     flex-direction: row;
-    margin: 0;
-    margin-left: 2.5%;
-    margin-right: 2.5%;
-    align-content: space-between;
+    align-content: space-around;
 }
-.vertical{
-    overflow: hidden;
+.gallery li{
+    width: 150%;
 }
-.vertical__slider{
-    display: flex;
-    align-items: flex-start;
-    transition: transform .3s ease-in-out;
-}
-.vertical__img{
-    width: 100%;
-}
-.horizontal{
-    overflow: hidden;
-}
-.horizontal__slider{
-    display: flex;
-    align-items: flex-start;
-    transition: transform .3s ease-in-out;
-}
-.horizontal__img{
-    width: 100%;
-}
-
-.last{
-    overflow: hidden;
-}
-.last__slider{
-    display: flex;
-    align-items: flex-start;
-    transition: transform .3s ease-in-out;
-}
-.last__img{
-    width: 100%;
+.gallery img{
+    width: 80%
 }
