@@ -347,7 +347,11 @@ body {
     margin: auto;
     background-attachment: fixed;
 }
-
+.gallery__imagen img{
+width: 80%;
+margin-left: 10%;
+margin-right: 10%;
+}
 .gallery__back, .gallery__next {
     cursor: pointer;
     position: absolute;
@@ -361,6 +365,8 @@ body {
     transition: 0.6s ease;
     border-radius:100%;
     user-select: none;
+    box-sizing: border-box;
+    padding: 30px;
 }
 .gallery__punto.active, .gallery__punto:hover {
     background-color: #FF302A;
