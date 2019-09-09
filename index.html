@@ -11,7 +11,7 @@
     <link href="https://fonts.googleapis.com/css?family=Montserrat&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Quicksand&display=swap" rel="stylesheet">
     <!-- Link del css -->
-    <link rel="stylesheet" href="./styles/style.css">
+    <link rel="stylesheet" href="./css/style.css">
 </head>
 
 <body>
@@ -227,23 +227,37 @@
     </section>
 
     <!-- GALLERY -->
-    <section class="gallery">
-            <ul class="gallery__images">
-                <li><a href="#img1"><img crc="./images/horizontal1.jpg" alt="">
-                <li><a href="#img2"><img src="./images/horizontal2.jpg" alt="">
-                <li><a href="#img3"><img src="./images/horizontal3.jpg" alt="">
-                <li><a href="#img4"><img src="./images/horizontal4.jpg" alt="">
-                </ul>     
-            <div class="gallery__modal" id="img1">
-                <a href="">&#60;</a>
-                <a href=""><img src="images/horizontal1.jpg" alt=""></a>
-                <a href="">></a>
-                <a href="">X</a>
-            </div>  
+    <div class="galeria">
 
         
+        <div class="galeria__imagen galeria__desvanecer">
+            <img src="./images/galleryone.jpg" style="width:100%">
+        </div>
+
+        <div class="galeria__imagen galeria__desvanecer">
+            <img src="./images/gallerytwo.jpg" style="width:100%">
+        </div>
+
+        <div class="galeria__imagen galeria__desvanecer">
+            <img src="./images/gallerythree.jpg" style="width:100%">
+        </div>
+        <div class="galeria__imagen galeria__desvanecer">
+                <img src="./images/galleryfour.jpg" style="width:100%">
+        </div>
+
+        <a class="galeria__anterior" onclick="otraImagen(-1)">&#10094;</a>
+        <a class="galeria__siguiente" onclick="otraImagen(1)">&#10095;</a>
+    </div>
+    <br>
+
+    <div style="text-align:center">
+        <span class="galeria__punto p1" onclick="imagenActual(1)"></span> 
+        <span class="galeria__punto p2" onclick="imagenActual(2)"></span> 
+        <span class="galeria__punto p3" onclick="imagenActual(3)"></span> 
+    </div>
     </section>
-    
+
+   
     <footer>
         <ol>
             <li>
@@ -277,8 +291,8 @@
         </div>
 
     </footer>
-    <script src="./scrip/main.js"></script>
-
+    <script src="./scrip/java.js"></script>
+  
 </body>
 
 </html>

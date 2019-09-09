@@ -19,6 +19,12 @@ html {
     scroll-behavior: smooth;
 }
 
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: 0;
+}
+
 body {
     font-family: 'Quicksand', sans-serif;
     background-color: #183460;
@@ -78,7 +84,6 @@ body {
     width: 100%;
     left: 0%;
 }
-.listnav a::
 
 /* BANNER */
 
@@ -139,7 +144,7 @@ body {
 .center__back {
     height: 100%;
     margin: 0 auto;
-    background-image: url('images/nike_banner.png');
+    background-image: url('../images/nike_banner.png');
     background-size: contain;
     background-position: center;
     background-repeat: no-repeat;
@@ -337,18 +342,62 @@ body {
 
 /* GALLERY */
 
-.gallery {
-    width: 100%;
-    margin: 0;
-    list-style: none;
-    
-    display: flex;
-    flex-direction: row;
-    align-content: space-around;
+.galeria {
+    position: relative;
+    margin: auto;
+    background-attachment: fixed;
 }
-.gallery li{
-    width: 150%;
+.galeria__anterior, .galeria__siguiente {
+    cursor: pointer;
+    position: absolute;
+    top: 50%;
+    width: auto;
+    padding: 16px;
+    margin-top: -22px;
+    color: white;
+    font-weight: bold;
+    font-size: 18px;
+    transition: 0.6s ease;
+    border-radius: 0 3px 3px 0;
+    user-select: none;
 }
-.gallery img{
-    width: 80%
+.galeria__punto.active, .galeria__punto:hover {
+    background-color: #43CDEC;
+}
+.galeria__siguiente {
+    right: 0;
+    border-radius: 3px 0 0 3px;
+}
+.galeria__anterior:hover, .galeria__siguiente:hover {
+    background-color: rgba(0, 0, 0, 0.8);
+}
+.galeria__punto {
+    cursor: pointer;
+    height: 0.9em;
+    width: 0.9em;
+    margin: 0 0.5em;
+    border-radius: 50%;
+    background-color: #43CDEC;
+    display: inline-block;
+    transition: background-color 0.6s ease;
+}
+.galeria__desvanecer {
+    animation-name: fade;
+    animation-duration: 1.5s;
+}
+@-webkit-keyframes fade {
+    from {
+        opacity: 0.4;
+   }
+    to {
+        opacity: 1;
+   }
+}
+@keyframes fade {
+    from {
+        opacity: 0.4;
+   }
+    to {
+        opacity: 1;
+   }
 }
