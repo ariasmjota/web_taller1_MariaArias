@@ -227,37 +227,38 @@
     </section>
 
     <!-- GALLERY -->
-    <div class="galeria">
+    <section class="gallery" id="gallery">
 
-        
-        <div class="galeria__imagen galeria__desvanecer">
+
+        <div class="gallery__imagen gallery__desvanecer">
             <img src="./images/galleryone.jpg" style="width:100%">
         </div>
 
-        <div class="galeria__imagen galeria__desvanecer">
+        <div class="gallery__imagen gallery__desvanecer">
             <img src="./images/gallerytwo.jpg" style="width:100%">
         </div>
 
-        <div class="galeria__imagen galeria__desvanecer">
+        <div class="gallery__imagen gallery__desvanecer">
             <img src="./images/gallerythree.jpg" style="width:100%">
         </div>
-        <div class="galeria__imagen galeria__desvanecer">
-                <img src="./images/galleryfour.jpg" style="width:100%">
+        <div class="gallery__imagen gallery__desvanecer">
+            <img src="./images/galleryfour.jpg" style="width:100%">
         </div>
 
-        <a class="galeria__anterior" onclick="otraImagen(-1)">&#10094;</a>
-        <a class="galeria__siguiente" onclick="otraImagen(1)">&#10095;</a>
-    </div>
-    <br>
-
-    <div style="text-align:center">
-        <span class="galeria__punto p1" onclick="imagenActual(1)"></span> 
-        <span class="galeria__punto p2" onclick="imagenActual(2)"></span> 
-        <span class="galeria__punto p3" onclick="imagenActual(3)"></span> 
-    </div>
+        <a class="gallery__back" onclick="otraImagen(-1)">&#10094;</a>
+        <a class="gallery__next" onclick="otraImagen(1)">&#10095;</a>
     </section>
+        <br>
 
+        <section style="text-align:center">
+            <span class="gallery__punto p1" onclick="imagenActual(1)"></span>
+            <span class="gallery__punto p2" onclick="imagenActual(2)"></span>
+            <span class="gallery__punto p3" onclick="imagenActual(3)"></span>
+            <span class="gallery__punto p4" onclick="imagenActual(4)"></span>
+         </section>
    
+
+
     <footer>
         <ol>
             <li>
@@ -292,7 +293,7 @@
 
     </footer>
     <script src="./scrip/java.js"></script>
-  
+
 </body>
 
 </html>
