@@ -40,6 +40,7 @@ body {
     height: 10%;
     margin-top: 2%;
     margin-left: 10%;
+    position: relative;
 }
 
 .header_logo {
@@ -47,16 +48,17 @@ body {
     height: 20px;
 }
 
-/* Lis nav */
+/* NAVIGATION */
 
-.listnav {
+.header__list {
     margin-top: 20px;
     margin-right: 0%;
     align-content: space-between;
     position: relative;
+    transition: all .4s ease;
 }
 
-.listnav a {
+.header__list a {
     font-size: 12pt;
     text-decoration: none;
     color: white;
@@ -68,12 +70,17 @@ body {
     border: none;
     background: none;
 }
-
-.listnav a::after {
+.header__btn{
+    background: none;
+    border: none;
+    display: none;
+    fill: #FF302A;
+}
+.header__list a::after {
     content: "";
     display: block;
     height: 0.3em;
-    background: #eb5866;
+    background: #FF302A;
     position: absolute;
     width: 100%;
     left: 0px;
@@ -82,15 +89,55 @@ body {
     transform: scale(0, 1);
 }
 
-.listnav a:hover::after {
+.header__list a:hover::after {
     transform: scale(1, 1);
 }
-.listnav a:focus::after{
+.header__list a:focus::after{
     transform: scale(1, 1);
 }
-.listnav--active::after{
+.header__list--active::after{
     transform: scale(1, 1);
 }
+
+/* NAV RESPONSIVE */
+@media (max-width: 500px){
+    .header__list{
+        position: absolute;
+        width: 100%;
+        
+        top: 50px;
+        left: 0px;
+        opacity: 0;
+        display: flex;
+        flex-direction: column;
+        pointer-events: none;
+        transform: translate(-100%, 0%)
+    }
+    .header__list a {
+        font-size: 12pt;
+        text-decoration: none;
+        color:#183460 ;
+        position: relative;
+        align-content: space-between;
+        padding: 20px 2em;
+        cursor: pointer;
+        outline: none;
+        border: none;
+        background: none;}
+
+    .header__list--active {
+        opacity: 1;
+        pointer-events: all;
+        transform: translate(0%, 0%);
+        background:rgba(255, 255, 255, 0.9);
+    }
+
+    .header__btn {
+        display: block;
+      
+    }
+}
+
 
 /* BANNER */
 
@@ -104,6 +151,9 @@ body {
     margin-left: 10%;
     margin: 0px auto;
     transition: transform .3s ease-in-out;
+}
+.banner__down{
+    margin-top: 70%;
 }
 
 /* Top banner */
@@ -134,7 +184,7 @@ body {
     font-weight: bolder;
     font-size: 700%;
     color: white;
-    z-index: 1;
+    z-index: -1;
     margin: 5pt;
 }
 
@@ -417,3 +467,4 @@ margin-right: 10%;
         opacity: 1;
    }
 }
+/* FOOTER */

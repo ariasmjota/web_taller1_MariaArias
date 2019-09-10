@@ -1,11 +1,23 @@
+function handleLoad() {
+  
+var btn = document.querySelector('.header__btn');
+var nav = document.querySelector('.header__list');
+var banner = document.querySelector('.banner');
 
-    var numImagen = 1;
+var numImagen = 1;
 var anterior=document.querySelector(".gallery__back");
 var siguiente=document.querySelector(".gallery__next");
 var p1=document.querySelector(".p1");
 var p2=document.querySelector(".p2");
 var p3=document.querySelector(".p3");
-var p3=document.querySelector(".p4");
+var p4=document.querySelector(".p4");
+
+function handleClick(){
+    nav.classList.toggle('header__list--active');
+    banner.classList.add('banner__down');
+}
+btn.addEventListener('click', handleClick);
+
 mostrarImagenes(numImagen);
 
 anterior.addEventListener('click', function() {
@@ -57,3 +69,5 @@ function mostrarImagenes(n) {
   puntos[numImagen-1].className += " active";
 
 }
+}
+window.addEventListener('load', handleLoad);
