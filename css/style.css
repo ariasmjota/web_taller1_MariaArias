@@ -290,10 +290,11 @@ body {
 }
 
 .individual__image {
-    width: 200px;
+    max-width: 70%;
+    max-height: 70%;
     position: absolute;
-    top: 20px;
-    right: 200px;
+    top: 20%;
+    right: 70%;
     transform: rotate(-25deg);
 }
 
@@ -307,6 +308,7 @@ body {
     font-family: 'Montserrat';
     font-size: 13pt;
     color: #eb5866;
+    
     padding: 2%;
     margin: 0;
 }
@@ -343,18 +345,6 @@ body {
     transition: transform .3s ease-in-out;
 }
 
-.advertising__individual--inactive {
-    transition: none;
-}
-
-.individual__image {
-    width: 200px;
-    position: absolute;
-    top: 20px;
-    right: 200px;
-    transform: rotate(-25deg);
-}
-
 }
 /* PRESENTATION */
 
@@ -377,7 +367,8 @@ body {
 .presentation__top h2 {
     font-family: 'Montserrat';
     font-style: normal;
-    font-size: 40pt;
+    font-size: 300%;
+    text-align: center;
     color: #FF302A;
     margin: 0;
 }
@@ -389,7 +380,8 @@ body {
 }
 
 .presentation__bottom img {
-    width: 50%;
+    width: 60%;
+    height: 60%;
     margin: 0;
 }
 
@@ -401,6 +393,14 @@ body {
     margin-right: 10%;
     align-content: space-between;
 }
+@media (max-width: 500px){
+    .presentation__top h2{
+        font-size: 200%;
+        padding: 5%;
+    }
+}
+
+
 
 /* Characteristic */
 
