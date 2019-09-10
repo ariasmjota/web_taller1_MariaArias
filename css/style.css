@@ -50,11 +50,9 @@ body {
 /* Lis nav */
 
 .listnav {
-    width: 80%;
     margin-top: 20px;
+    margin-right: 0%;
     align-content: space-between;
-    margin-left: 10%;
-    margin-right: 10%;
     position: relative;
 }
 
@@ -66,23 +64,32 @@ body {
     align-content: space-between;
     padding: 20px 2em;
     cursor: pointer;
+    outline: none;
+    border: none;
+    background: none;
 }
 
-.listnav a::before {
+.listnav a::after {
     content: "";
     display: block;
-    width: 0;
     height: 0.3em;
     background: #eb5866;
     position: absolute;
-    top: 0;
-    left: 50%;
-    transition: all 0.3s;
+    width: 100%;
+    left: 0px;
+    top: -1%;
+    transition: transform .3s ease;
+    transform: scale(0, 1);
 }
 
-.listnav a:hover::before {
-    width: 100%;
-    left: 0%;
+.listnav a:hover::after {
+    transform: scale(1, 1);
+}
+.listnav a:focus::after{
+    transform: scale(1, 1);
+}
+.listnav--active::after{
+    transform: scale(1, 1);
 }
 
 /* BANNER */

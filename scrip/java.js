@@ -1,12 +1,20 @@
 
     var numImagen = 1;
-var anterior=document.querySelector(".galeria__back");
-var siguiente=document.querySelector(".galeria__next");
+var anterior=document.querySelector(".gallery__back");
+var siguiente=document.querySelector(".gallery__next");
 var p1=document.querySelector(".p1");
 var p2=document.querySelector(".p2");
 var p3=document.querySelector(".p3");
 var p3=document.querySelector(".p4");
 mostrarImagenes(numImagen);
+
+anterior.addEventListener('click', function() {
+otraImagen(-1);
+})
+
+siguiente.addEventListener('click', function() {
+  otraImagen(1);
+})
 
 function otraImagen(n) {
     mostrarImagenes(numImagen += n);
@@ -15,6 +23,22 @@ function otraImagen(n) {
 function imagenActual(n) {
     mostrarImagenes(numImagen = n);
 }
+
+p1.addEventListener('click', function(){
+  imagenActual(1)
+})
+p2.addEventListener('click', function(){
+  imagenActual(2)
+})
+
+p3.addEventListener('click', function(){
+imagenActual(3)
+})
+
+p4.addEventListener('click', function(){
+  imagenActual(4)
+})
+
 
 function mostrarImagenes(n) {
   var i;
