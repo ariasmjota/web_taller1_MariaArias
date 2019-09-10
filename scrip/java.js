@@ -14,7 +14,7 @@ var p4=document.querySelector(".p4");
 
 function handleClick(){
     nav.classList.toggle('header__list--active');
-    banner.classList.add('banner__down');
+    banner.classList.toggle('banner--active');
 }
 btn.addEventListener('click', handleClick);
 

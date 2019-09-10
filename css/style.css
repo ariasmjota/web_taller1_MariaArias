@@ -152,7 +152,7 @@ body {
     margin: 0px auto;
     transition: transform .3s ease-in-out;
 }
-.banner__down{
+.banner--active{
     margin-top: 70%;
 }
 
@@ -187,6 +187,7 @@ body {
     z-index: -1;
     margin: 5pt;
 }
+
 
 /* Center seccion */
 
@@ -223,31 +224,42 @@ body {
     width: 25%;
     margin: 0;
     height: 100%;
+    position: relative;
     display: flex;
-    align-items: baseline;
-    justify-content: baseline;
 }
 
 .btop__left h2 {
     font-family: 'Montserrat';
-    font-size: 36px;
+    font-size: 250%;
     font-style: normal;
     font-weight: bold;
     color: #43CDEC;
+    position: absolute;
     text-align: end;
-    display: inline-block;
-    vertical-align: baseline;
+    margin-bottom: 5%;
 }
+
 
 /* Bottom banner */
 
 .banner__bottom {
     font-family: 'Montserrat', sans-serif;
-    font-size: 20pt;
+    font-size: 200%;
     color: #eb5866;
-    margin: 0;
+    margin: 5% 0;
 }
-
+/* Banner responsive */
+@media (max-width: 500px){
+    .btop__rigth h1{
+        font-size: 200%;
+    }
+    .btop__left h2{
+        font-size: 100%;
+    }
+    .banner__bottom{
+        font-size: 100%;
+    }
+}
 /* Advertising */
 
 .advertising {
@@ -312,6 +324,36 @@ body {
     margin: 4pt 0;
 }
 
+/* Banner responsive */
+@media (max-width: 500px){
+    .advertising{
+        flex-direction: column;
+        align-items: center;
+    }
+    
+.individual {
+    width: 60%;
+    box-sizing: border-box;
+    padding: 40px;
+    background-color: white;
+   
+    padding: 0 25px;
+    border-radius: 23px;
+    margin: 5%;
+    transition: transform .3s ease-in-out;
+}
+
+.advertising__individual--inactive {
+    transition: none;
+}
+
+.individual__image {
+    width: 200px;
+    position: absolute;
+    top: 20px;
+    right: 200px;
+    transform: rotate(-25deg);
+}
 /* PRESENTATION */
 
 .presentation {
