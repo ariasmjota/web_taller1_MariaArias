@@ -42,20 +42,20 @@ function imagenActual(n) {
 }
 
 function cambiarImagen1(){
-  id.src="/images/cambio1.png";
+  id.src="./images/cambio1.png";
 }
  cam1.addEventListener('click', function(){
   cambiarImagen1()
 })
 function cambiarImagen2(){
-  id.src="/images/cambio2.png";
+  id.src="./images/cambio2.png";
 }
  cam2.addEventListener('click', function(){
   cambiarImagen2()
 })
 
 function cambiarImagen3(){
-  id.src="/images/cambio3.png";
+  id.src="./images/cambio3.png";
 }
  cam3.addEventListener('click', function(){
   cambiarImagen3()
