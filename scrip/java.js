@@ -4,6 +4,11 @@ var btn = document.querySelector('.header__btn');
 var nav = document.querySelector('.header__list');
 var banner = document.querySelector('.banner');
 
+var id=document.getElementById("bottom__id");
+var cam1= document.querySelector(".b1");
+var cam2= document.querySelector(".b2");
+var cam3= document.querySelector(".b3");
+
 var numImagen = 1;
 var anterior=document.querySelector(".gallery__back");
 var siguiente=document.querySelector(".gallery__next");
@@ -35,6 +40,27 @@ function otraImagen(n) {
 function imagenActual(n) {
     mostrarImagenes(numImagen = n);
 }
+
+function cambiarImagen1(){
+  id.src="/images/cambio1.png";
+}
+ cam1.addEventListener('click', function(){
+  cambiarImagen1()
+})
+function cambiarImagen2(){
+  id.src="/images/cambio2.png";
+}
+ cam2.addEventListener('click', function(){
+  cambiarImagen2()
+})
+
+function cambiarImagen3(){
+  id.src="/images/cambio3.png";
+}
+ cam3.addEventListener('click', function(){
+  cambiarImagen3()
+})
+
 
 p1.addEventListener('click', function(){
   imagenActual(1)
